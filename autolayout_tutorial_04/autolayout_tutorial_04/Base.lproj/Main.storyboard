@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAM-JL-NsX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout_tutorial_04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TWS-tO-R3m">
+                                <rect key="frame" x="30" y="393" width="184.5" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3B-gk-FAz">
+                                        <rect key="frame" x="0.0" y="79.5" width="41.5" height="20.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-0d-lmW">
+                                        <rect key="frame" x="71.5" y="79.5" width="41.5" height="20.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2l-Ne-2vN">
+                                        <rect key="frame" x="143" y="79.5" width="41.5" height="20.5"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7Jr-mg-S8R"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TWS-tO-R3m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="MO9-YL-1OF"/>
+                            <constraint firstItem="TWS-tO-R3m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="obg-YJ-BqG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="66"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2ve-xi-C4R">
+            <objects>
+                <viewController id="GAM-JL-NsX" customClass="ViewController" customModule="autolayout_tutorial_04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wV-fL-0TV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P0P-zg-j3t">
+                                <rect key="frame" x="97" y="194" width="220" height="380"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p2o-Qz-Pkk">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="380"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-By-fGI" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="CXJ-5m-WW2"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Fc2-9R-4h9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdl-rD-St2" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="vHc-6J-IJJ"/>
+                                                    <constraint firstAttribute="width" constant="60" id="xhb-pQ-NAj"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT4-Xh-N6j" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="2Eb-PN-8hG"/>
+                                                    <constraint firstAttribute="width" constant="60" id="JvX-Id-wmd"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thA-Ti-bdZ" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="H3H-eN-NU0"/>
+                                                    <constraint firstAttribute="width" constant="60" id="yhY-Mn-3zf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="*"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kww-qx-sib">
+                                                <rect key="frame" x="0.0" y="320" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-Rg-VBc">
+                                        <rect key="frame" x="80" y="0.0" width="60" height="380"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-Di-aZh" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="5qI-tr-7sB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="K8h-4M-WNw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCN-Ki-zmp" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Z8s-if-6Hz"/>
+                                                    <constraint firstAttribute="width" constant="60" id="b1O-RR-VlP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyC-Zj-4SR" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="TJf-rE-0M0"/>
+                                                    <constraint firstAttribute="height" constant="60" id="ZXF-fO-hKo"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYr-Mu-NGJ" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="IfK-iM-1tD"/>
+                                                    <constraint firstAttribute="height" constant="60" id="aq5-Up-OJw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp2-m5-75n" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="320" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="CJv-ms-bel"/>
+                                                    <constraint firstAttribute="width" constant="60" id="NQ7-W2-bt6"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-cZ-GND">
+                                        <rect key="frame" x="160" y="0.0" width="60" height="380"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-QL-Moe" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="KV7-GG-XWo"/>
+                                                    <constraint firstAttribute="height" constant="60" id="Vk3-qI-ALm"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0l-oS-TsR" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="a3m-im-Fbz"/>
+                                                    <constraint firstAttribute="width" constant="60" id="gVf-iv-s3U"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkb-Xp-oHr" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="m60-Rv-jwe"/>
+                                                    <constraint firstAttribute="width" constant="60" id="p0g-fd-ikr"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-bs-GPd" customClass="CircleButton" customModule="autolayout_tutorial_04" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="2Ir-hD-XVm"/>
+                                                    <constraint firstAttribute="width" constant="60" id="zLP-NB-vIf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="#"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqT-aF-yNd">
+                                                <rect key="frame" x="0.0" y="320" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9wT-em-Tp3">
+                                <rect key="frame" x="97" y="125" width="220" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hIl-0E-5EM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9wT-em-Tp3" firstAttribute="leading" secondItem="P0P-zg-j3t" secondAttribute="leading" id="1IV-RG-HSM"/>
+                            <constraint firstItem="P0P-zg-j3t" firstAttribute="top" secondItem="hIl-0E-5EM" secondAttribute="top" constant="150" id="Acg-dS-en7"/>
+                            <constraint firstItem="P0P-zg-j3t" firstAttribute="top" secondItem="9wT-em-Tp3" secondAttribute="bottom" constant="32" id="Yx5-OF-mKo"/>
+                            <constraint firstItem="9wT-em-Tp3" firstAttribute="trailing" secondItem="P0P-zg-j3t" secondAttribute="trailing" id="fvA-Uo-EeP"/>
+                            <constraint firstItem="P0P-zg-j3t" firstAttribute="centerX" secondItem="9wV-fL-0TV" secondAttribute="centerX" id="mBY-C0-dE3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneCallBtn" destination="qp2-m5-75n" id="v9U-cs-uif"/>
+                        <outlet property="phoneNumberLabel" destination="9wT-em-Tp3" id="9yE-Bz-fTr"/>
+                        <outletCollection property="phoneNumberBtns" destination="e6f-By-fGI" collectionClass="NSMutableArray" id="fiI-iA-mVg"/>
+                        <outletCollection property="phoneNumberBtns" destination="GSc-Di-aZh" collectionClass="NSMutableArray" id="jaE-L7-s90"/>
+                        <outletCollection property="phoneNumberBtns" destination="IA9-QL-Moe" collectionClass="NSMutableArray" id="cLa-Np-ksk"/>
+                        <outletCollection property="phoneNumberBtns" destination="Wdl-rD-St2" collectionClass="NSMutableArray" id="FCg-vW-kjc"/>
+                        <outletCollection property="phoneNumberBtns" destination="DCN-Ki-zmp" collectionClass="NSMutableArray" id="2Dn-3G-x1U"/>
+                        <outletCollection property="phoneNumberBtns" destination="C0l-oS-TsR" collectionClass="NSMutableArray" id="wKT-ae-Sdl"/>
+                        <outletCollection property="phoneNumberBtns" destination="RT4-Xh-N6j" collectionClass="NSMutableArray" id="9mw-pA-lCH"/>
+                        <outletCollection property="phoneNumberBtns" destination="cyC-Zj-4SR" collectionClass="NSMutableArray" id="rbQ-q5-YgE"/>
+                        <outletCollection property="phoneNumberBtns" destination="Kkb-Xp-oHr" collectionClass="NSMutableArray" id="E4J-WQ-NWa"/>
+                        <outletCollection property="phoneNumberBtns" destination="thA-Ti-bdZ" collectionClass="NSMutableArray" id="W04-Ew-g3J"/>
+                        <outletCollection property="phoneNumberBtns" destination="SYr-Mu-NGJ" collectionClass="NSMutableArray" id="dgK-NN-O3t"/>
+                        <outletCollection property="phoneNumberBtns" destination="rAg-bs-GPd" collectionClass="NSMutableArray" id="uda-0k-lNg"/>
+                        <outletCollection property="phoneNumberBtns" destination="e6f-By-fGI" collectionClass="NSMutableArray" id="YB9-ZJ-JGV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TJ-Hd-PS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998.55072463768124" y="37.5"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="C0l-oS-TsR">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="DCN-Ki-zmp">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="GSc-Di-aZh">
+            <size key="intrinsicContentSize" width="32.5" height="31"/>
+        </designable>
+        <designable name="IA9-QL-Moe">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="Kkb-Xp-oHr">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="RT4-Xh-N6j">
+            <size key="intrinsicContentSize" width="32" height="31"/>
+        </designable>
+        <designable name="SYr-Mu-NGJ">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="Wdl-rD-St2">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="cyC-Zj-4SR">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="e6f-By-fGI">
+            <size key="intrinsicContentSize" width="30.5" height="31"/>
+        </designable>
+        <designable name="qp2-m5-75n">
+            <size key="intrinsicContentSize" width="43.5" height="31"/>
+        </designable>
+        <designable name="rAg-bs-GPd">
+            <size key="intrinsicContentSize" width="33" height="31"/>
+        </designable>
+        <designable name="thA-Ti-bdZ">
+            <size key="intrinsicContentSize" width="30.5" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
